@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat's Café</title>
+    <link rel="stylesheet" href="styles-css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="cafe-logo.png" alt="Nat's Café Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order">Order Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content container">
+            <h1 class="display-4">Nat's Café</h1>
+            <p class="lead">Brewing Happiness, One Cup at a Time</p>
+            <div class="hero-actions">
+                <a href="#menu" class="hero-cta">Explore Menu</a>
+                <a href="#order" class="hero-cta ml-3">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Coffee Delights</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Latte</h3>
+                        <p class="price">200/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Black Coffee</h3>
+                        <p class="price">150/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Espresso</h3>
+                        <p class="price">180/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Classic Cappuccino</h3>
+                        <p class="price">150/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Caramel Macchiato</h3>
+                        <p class="price">275/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Filter Coffee</h3>
+                        <p class="price">150/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Hazelnut</h3>
+                        <p class="price">300/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Mocha</h3>
+                        <p class="price">350/=</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Snack Central</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Croissant</h3>
+                        <p class="price">90/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chocolate Muffin</h3>
+                        <p class="price">100/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Biscuits</h3>
+                        <p class="price">50/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cookies</h3>
+                        <p class="price">50/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Donut</h3>
+                        <p class="price">120/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cheesecake</h3>
+                        <p class="price">300/=</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Garlic Bread</h3>
+                        <p class="price">80/=</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="container my-5">
+        <h2 class="text-center mb-4">Order Now</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="orderForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="coffee" class="form-label">Select Coffee</label>
+                        <select class="form-select" id="coffee" required>
+                            <option value="">Choose a Coffee</option>
+                            <option value="latte">Latte (200/=)</option>
+                            <option value="blackCoffee">Black Coffee (150/=)</option>
+                            <option value="espresso">Espresso (180/=)</option>
+                            <option value="cappuccino">Classic Cappuccino (150/=)</option>
+                            <option value="caramelMacchiato">Caramel Macchiato (275/=)</option>
+                            <option value="filterCoffee">Filter Coffee (150/=)</option>
+                            <option value="hazelnut">Hazelnut (300/=)</option>
+                            <option value="mocha">Mocha (350/=)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pastry" class="form-label">Select Pastry</label>
+                        <select class="form-select" id="pastry" required>
+                            <option value="">Choose a Pastry</option>
+                            <option value="croissant">Croissant (90/=)</option>
+                            <option value="chocolateMuffin">Chocolate Muffin (100/=)</option>
+                            <option value="biscuits">Biscuits (50/=)</option>
+                            <option value="cookies">Cookies (50/=)</option>
+                            <option value="donut">Donut (120/=)</option>
+                            <option value="cheesecake">Cheesecake (300/=)</option>
+                            <option value="garlicBread">Garlic Bread (80/=)</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="coffeeQuantity" class="form-label">Coffee Quantity</label>
+                            <input type="number" class="form-control" id="coffeeQuantity" min="1" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="pastryQuantity" class="form-label">Pastry Quantity</label>
+                            <input type="number" class="form-control" id="pastryQuantity" min="1" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>About Nat's Café</h2>
+                <p>Welcome to Nat's Cafe, where every cup tells a story! Founded in 2024, our cozy coffee shop is dedicated to crafting the perfect blend of flavor, warmth, and community.</p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+            <div class="col-md-6">
+                <img src="cafe-interior.jpg" alt="Cafe Interior" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-envelope fa-3x mb-3"></i>
+                <h3>Email</h3>
+                <p>Natescafe@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-phone fa-3x mb-3"></i>
+                <h3>Phone</h3>
+                <p>+254 701 657530</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt fa-3x mb-3"></i>
+                <h3>Location</h3>
+                <p>Nairobi, Kenya</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-4 text-center">
+        <p>&copy; 2024 Nat's Café. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script-js.js"></script>
+</body>
+</html>
